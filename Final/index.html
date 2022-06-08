@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="app.js">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+</head>
+
+<body onload=Final()>
+
+    <center>
+        <div>
+            <h2 class="section">DSC106 - Final</h2>
+            A brief glimpse into how some Valorant pros have performed at each of the four LAN events from May 2021 to
+            May
+            2022.
+            Dataset Description: " This dataset contains the player stats who have
+            been part of Valorant Lan event, which was first organized in May 2021,
+            and still expanding its audience at a noticeable rate, there had been four event,
+            as of May 2022, this dataset have all the essential player stats like his kills in
+            game, deaths, assist, combat score and many more along with the infos like country
+            and team" from
+            https://www.kaggle.com/datasets/aadeshmishra/valorant-esports-player-stats-at-lan-till-may-2022
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h3>Multiple Boxplots:</h3>
+            <b>Description</b>: This graph is asking which is the best North American team during this time frame. It
+            uses number of
+            kills combined for each team as a measure of skill, with OpTic Gaming as the clear winner.
+            <br><b>Color choice</b>: #ff4654 because it is the color Riot Games uses for their Valorant themed pages and
+            logos.
+            <br><b>Marks</b>: Areas (Geographic boundary)
+            <br><b>Channels</b>: Color
+            <div id="q0">
+                <br><br><br>
+                <h1>Which is the Best North American Team</h1><br><br>
+            </div>
+            <div id="q0_plot" class="center_plot">
+
+            </div>
+
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h3>World Map:</h3>
+            <b>Description</b>: Comparison of each country and the total ACS from their respective players. This graph shows amount of participation from each country too.
+            <br><b>Color choice</b>: #ff4654 because it is the color Riot Games uses for their Valorant themed pages and
+            logos. I also wanted to go with black to inidicate higher combat scores because it is visually distinct from the light colored red on the opposite end of this color spectrum.
+            <br><b>Marks</b>: Areas (Geographic boundary)
+            <br><b>Channels</b>: Color
+            <div id="q1">
+                <br><br><br><br><br>
+            </div>
+            <div id="q1_plot" class="center_plot">
+            </div><br>
+
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <div>
+                <h3>Scatterplot:</h3>
+                <b>Description</b>: I wanted to see how each player in this dataset compared to one another in terms of their combat performance and kill count.
+                <br><b>Color choice</b>: #ff4654 because it is the color Riot Games uses for their Valorant themed pages
+                and logos.
+                <br><b>Marks</b>: Points
+                <br><b>Channels</b>: Horizontal + Vertical Position
+                <div id="q2">
+                    <br><br><br>
+                    <h1>Player ACS vs Kill Count</h1><br><br>
+                </div>
+                <div id="scatter" class="center_plot">
+                </div><br>
+                <div id="q2_answer" class="center_plot">
+                </div>
+            </div>
+
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h3>Barplot</h3>
+            <b>Description</b>: This graph shows the Average Combat score for each country and how the players from that country compare with one another
+            <br><b>Color choice</b>: #ff4654 because it is the color Riot Games uses for their Valorant themed pages and
+            logos.
+            <br><b>Marks</b>: Lines
+            <br><b>Channels</b>: Vertical Length + Horizontal Position
+            <div id="bars">
+            </div>
+            <br><br><br>
+            <h1>Each Player's ACS (Per Country)</h1><br><br>
+            <div id="barplot" class="center_plot">
+                <div id="dropdown">
+                </div>
+            </div>
+        </div>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <h3>Stacked Barplot</h3>
+        <b>Description</b>: For each team, how do inidividual players compare with one another? Y-Scale is consistent to allow for comparisons between teams.
+        <br><b>Color choice</b>: #ff4654 because it is the color Riot Games uses for their Valorant themed pages and
+        logos. Also chose light blue for assists to reinforce positive connotation and black for death for the opposite. The light red also 
+        consistent with other plots to symbolize kills.
+        <br><b>Marks</b>: Lines + Areas
+        <br><b>Channels</b>: Vertical length and horizontal position + Color
+        <div id="q4">
+            <br><br><br>
+            <h1>Comparsion of Each Team's Players' ACS</h1>
+            <br><br>
+        </div>
+
+        <div id="q4_plot" class="center_plot">
+            <div id="drop">
+            </div>
+        </div>
+        </div>
+
+
+    </center>
+
+</body>
+
+</html>
